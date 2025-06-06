@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #f4f4f4;
+}
+
+#logo {
+  width: 20px;
+  height: 20px;
+}
+
+#app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  color: rgb(4, 102, 97);
+  text-align: right;
+  user-select: none;
+}
+
+#marca {
+  color: rgb(255, 255, 255);
+  display: block;
+  background-color: rgb(4, 102, 97);
+  text-align: center;
+  width: 15%;
+  user-select: none;
+}
+
+#marca:hover {
+  transform: scale(1.06);
+}
+
+.lista-produtos {
+  margin-top: 2rem;
+}
+
+.grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.card-produto {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.card-produto:hover {
+  transform: scale(1.03);
+}
+
+.card-produto img {
+  max-width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.card-produto h3 {
+  font-size: 1rem;
+  color: #333;
+}
+
+.card-produto p {
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
+}
+
+button {
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1a242f;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c3e50;
+  color: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.icone-carrinho {
+  cursor: pointer;
+  font-size: 1.3rem;
+  position: relative;
+}
+
+.contador {
+  background-color: red;
+  border-radius: 50%;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  color: white;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
